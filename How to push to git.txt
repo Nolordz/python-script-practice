@@ -1,0 +1,4 @@
+Pwd = present working directory
+cd = change directory
+ls = list
+
