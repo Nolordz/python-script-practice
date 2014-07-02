@@ -13,8 +13,8 @@ with open("players.txt") as f:
         position = line[-1]
         players[name] = position
 
-my_players =  sorted(players.items())
-for name,position in my_players:
+my_players = sorted(players.items())
+for name.position in my_players:
 
     print name + ' => ' + position
 
