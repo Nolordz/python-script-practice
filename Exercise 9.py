@@ -12,15 +12,41 @@ print the number of iterations (we need to create a code to count the iterations
 
 *2 - answer from the loop against error."""
 
-error = 0.00001
+"""def recursive_thing(calls=1):
+    # "calls" argument keeps track of recursion depth
+    if keep_recursing():
+        # pass a higher count to the recursive call
+        recursive_thing(calls + 1)
+    else:
+        print calls
+        return"""
+
+
+
+error = 0.0001
 iterations = 0
 
-x = input("Please enter a number to calculate to the square root of :")
-a = input("Please enter another number as starting point:")
-next_x = x ** .5
-a = float(x +(a / x)) / 2.0 - next_x
-diff = a - error
-print diff
+a = input("Please enter a number to calculate to the square root of :")
+x = input("Please enter a number as starting  point:")
+x = float(x +(a / x)) / 2.0
+next_x = float(x+(a/x))/2.0
+diff = x - next_x
+
+while  diff >= error:
+    x = next_x
+    next_x = float(x+(a/x))/2.0
+    diff = x - next_x
+    #print str(diff)
+    iterations += 1
+
+
+print "The result is",next_x
+print iterations
+
+
+
+
+
 
 
 
