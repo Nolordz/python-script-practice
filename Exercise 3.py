@@ -22,7 +22,7 @@ num_speed_of_light = miles * SPEED_OF_LIGHT
 print "Converted to barleycorn/day is: %s" % num_barleycorn
 print "Converted to furlongs/fortnight is: %s" % num_furlongs
 print "Converted to Mach number is : %s" % num_mach
-print "Converted to the percentage of the speed of light is %s" % num_speed_of_light"""
+print "Converted to the percentage of the speed of light is %s" % num_speed_of_light
 
 
 
